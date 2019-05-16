@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            queue - Where a start happens
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img/favicon.ico" type="favicon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="queue-nav queue-dashboard-nav queue-dashboard-in-nav">
+            <a href="landingpage.html" class="queue-nav-logo">
+                <img src="img/web_assets/queue-header-logo.png" height="42">
+            </a>
+            <form>
+                <input class="queue-signup-textbox queue-dashboard-search" type="text" placeholder="Search..">
+                <i class="fas fa-search"></i>
+            </form>
+            <label for="profileExpandTrigger" class="queue-nav-item-container">
+                <div style="width: 30px; height: 30px; padding: 0; border-radius: 50%; overflow: hidden;">
+                    <img src="img/web_assets/anonymous/profile_male.jpg" style="width: 30px; height: 30px;">
+                </div>
+                <a id="profileExpandMenu">Agustinus Theodorus</a>
+            </label>
+            <label for="profileMobileExpandTrigger" id="profileMobileExpandBurger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </nav>
+        <input id="profileExpandTrigger" type="checkbox">
+        <nav class="queue-expand-nav">
+            <a href="profile.html">
+                Profile
+            </a>
+            <a href="settings.html">
+                Settings
+            </a>
+            <a href="landingpage.html">
+                Sign Out
+            </a>
+        </nav>
+        <input id="profileMobileExpandTrigger" type="checkbox">
+        <nav class="queue-expand-mobile-nav">
+            <form>
+                <input class="queue-signup-textbox queue-dashboard-search" type="text" placeholder="Search..">
+                <i class="fas fa-search"></i>
+            </form>
+            <div class="queue-nav-item-container">
+                <div style="width: 30px; height: 30px; padding: 0; border-radius: 50%; overflow: hidden;">
+                    <img src="img/web_assets/anonymous/profile_male.jpg" style="width: 30px; height: 30px;">
+                </div>
+                <a>Agustinus Theodorus</a>
+            </div>
+            <a href="profile.html">
+                Profile
+            </a>
+            <a href="settings.html">
+                Settings
+            </a>
+            <a href="landingpage.html">
+                Sign Out
+            </a>
+        </nav>
+
+        <main class="queue-dashboard-main">
+            <h2>Upload Your Proposal</h2>
+            <a href="uploadproposal.html" class="queue-dashboard-upload">
+                <div>
+                    <i class="fas fa-file-upload fa-5x"></i>
+                </div>
+                <input id="uploadFile" type="file" style="position: absolute; opacity: 0;">
+            </a>
+            <div class="queue-tutorial-container" id="audioTrigger">
+                <div class="queue-sound-tutorial-button">
+                    <i class="fas fa-volume-down fa-1x"></i>
+                </div>
+                <div>
+                    Play Page Tutorial
+                </div>
+                <audio id="audio" src="audio/Dashboard (online-audio-converter.com).mp3"></audio>
+            </div>
+            <h2>Your Projects</h2>
+            <div class="queue-dashboard-proposals">
+                <div>
+                    <div class="queue-proposal-card">
+                        <span>
+                            <h2>Title</h2>
+                            <span>brief desc..</span>
+                            <span>100 investor 100 views</span>
+                        </span>
+                        <span>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </span>
+                         <div class="queue-proposal-hover-options">
+                            <a href="proposal.html">
+                                View
+                            </a>
+                            <a href="proposal.html">
+                                Donate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Top viewed proposals</h2>
+            <div class="queue-dashboard-proposals">
+                <div>
+                    <div class="queue-proposal-card">
+                        <span>
+                            <h2>Title</h2>
+                            <span>brief desc..</span>
+                            <span>100 investor 100 views</span>
+                        </span>
+                        <span>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </span>
+                         <div class="queue-proposal-hover-options">
+                            <a href="proposal.html">
+                                View
+                            </a>
+                            <a href="proposal.html">
+                                Donate
+                            </a>
+                        </div>
+                    </div>
+                    <div class="queue-proposal-card">
+                        <span>
+                            <h2>Title</h2>
+                            <span>brief desc..</span>
+                            <span>100 investor 100 views</span>
+                        </span>
+                        <span>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </span>
+                         <div class="queue-proposal-hover-options">
+                            <a href="proposal.html">
+                                View
+                            </a>
+                            <a href="proposal.html">
+                                Donate
+                            </a>
+                        </div>
+                    </div>
+                    <div class="queue-proposal-card">
+                        <span>
+                            <h2>Title</h2>
+                            <span>brief desc..</span>
+                            <span>100 investor 100 views</span>
+                        </span>
+                        <span>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </span>
+                         <div class="queue-proposal-hover-options">
+                            <a href="proposal.html">
+                                View
+                            </a>
+                            <a href="proposal.html">
+                                Donate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="queue-dashboard-footer">
+            <div>
+                <div>
+                    © queue 2019
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            let audio = document.getElementById("audio");
+            let volumeIcon = document.getElementById('audioTrigger').getElementsByClassName('fa-volume-down')[0];
+            document.getElementById('audioTrigger').onclick = function(){
+                let volumeIcon = this.getElementsByClassName('fa-volume-down')[0];
+                volumeIcon.classList.remove("fa-volume-down");
+                volumeIcon.classList.add("fa-volume-up");
+                
+                let audio = document.getElementById("audio");
+                audio.play();
+            }
+            audio.addEventListener("ended", function(){
+                volumeIcon.classList.remove("fa-volume-up");
+                volumeIcon.classList.add("fa-volume-down");
+            });
+            let search = document.getElementsByClassName('queue-dashboard-search');
+            for(let i = 0; i < search.length; i++){
+                search[i].onclick = function(){
+                    window.location.href = "viewall.html";
+                }
+            }
+        </script>
+    </body>
+</html>

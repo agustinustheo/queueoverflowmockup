@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Queue Overflow
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img/favicon.ico" type="favicon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="queue-nav queue-signup-nav">
+            <a href="landingpage.html" class="queue-nav-logo">
+                <img src="img/web_assets/queue-header-logo.png" height="42">
+            </a>
+            <div class="queue-nav-item-container">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </nav>
+
+        <main class="queue-signup-container">
+            <h1>Join queue</h1>
+            <div class="queue-signup-progress">
+                <div class="queue-signup-progress-bar">
+                    <div class="queue-signup-progress-bar-full"></div>
+                </div>
+                <div class="queue-signup-progress-number" style="left: calc(10% - (15px / 2)); ">
+                    1
+                </div>
+                <div class="queue-signup-progress-bar">
+                    <div class="queue-signup-progress-bar-full"></div>
+                </div>
+                <div class="queue-signup-progress-number" style="left: calc(30% - (15px / 2)); ">
+                    2
+                </div>
+                <div class="queue-signup-progress-bar">
+                    <div class="queue-signup-progress-bar-full"></div>
+                </div>
+                <div class="queue-signup-progress-number" style="left: calc(50% - (15px / 2)); ">
+                    3
+                </div>
+                <div class="queue-signup-progress-bar">
+                    <div class="queue-signup-progress-bar-full"></div>
+                </div>
+                <div class="queue-signup-progress-number" style="left: calc(70% - (15px / 2)); ">
+                    4
+                </div>
+                <div class="queue-signup-progress-bar">
+                    <div class="queue-signup-progress-bar-full"></div>
+                </div>
+                <div class="queue-signup-progress-number" style="left: calc(90% - (15px / 2)); ">
+                    5
+                </div>
+                </div>
+            </div>
+
+            <form id="signUpForm">
+                <div class="queue-signup-form">
+                    <b>What's your name?</b>
+                    <span>Please enter your name</span>
+                    <input class="queue-signup-textbox" type="text" placeholder="Enter your name..">
+                    <input class="queue-button queue-signup-button queue-signup-next-button" type="button" value="Next">
+                </div>
+                <div class="queue-signup-form">
+                    <b>What's your email address?</b>
+                    <span>We will send a confirmation to your email</span>
+                    <input class="queue-signup-textbox" type="text" placeholder="Enter your email..">
+                    <div style="display: flex;">
+                        <input class="queue-button queue-signup-button queue-signup-back-button" type="button" value="Back">
+                        <input class="queue-button queue-signup-button queue-signup-next-button" type="button" value="Next">
+                    </div>
+                </div>
+                <div class="queue-signup-form">
+                    <b>What's your bank account number?</b>
+                    <div>
+                        <label class="queue-signup-label" for="bankName">Bank</label>
+                        <input class="queue-signup-textbox" type="text" placeholder="Enter your bank name..">
+                    </div>
+                    <div>
+                        <label class="queue-signup-label" for="bankNumber">Bank Number</label>
+                        <input class="queue-signup-textbox" type="text" placeholder="Enter your bank number..">
+                    </div>
+                    <div style="display: flex;">
+                        <input class="queue-button queue-signup-button queue-signup-back-button" type="button" value="Back">
+                        <input class="queue-button queue-signup-button queue-signup-next-button" type="button" value="Next">
+                    </div>
+                </div>
+                <div class="queue-signup-form">
+                    <b>Additional Information</b>
+                    <div>
+                        <label class="queue-signup-label" for="dateOfBirth">Date of Birth</label>
+                        <input class="queue-signup-textbox" type="text" placeholder="dd/mm/yyyy">
+                    </div>
+                    <div>
+                        <label class="queue-signup-label" for="homeAddress">Home Address</label>
+                        <input class="queue-signup-textbox" type="text" placeholder="Enter your address..">
+                    </div>
+                    <div>
+                        <label class="queue-signup-label" for="businessAddress">Business Address</label>
+                        <input class="queue-signup-textbox" type="text" placeholder="Enter your business address..">
+                    </div>
+                    <div>
+                        <label>Account Type</label>
+                        <label for="investorsRadio">
+                            <input type="radio" name="accountType">
+                            Investors
+                        </label>
+                        <label for="startersRadio">
+                            <input type="radio" name="accountType">
+                            Starters
+                        </label>
+                    </div>
+                    <div style="display: flex;">
+                        <input class="queue-button queue-signup-button queue-signup-back-button" type="button" value="Back">
+                        <input class="queue-button queue-signup-button queue-signup-next-button" type="button" value="Next">
+                    </div>
+                </div>
+                <div class="queue-signup-form">
+                    <b>Set up your password</b>
+                    <div>
+                        <label class="queue-signup-label" for="password">Password</label>
+                        <input class="queue-signup-textbox" type="password" placeholder="Enter your password..">
+                    </div>
+                    <span>Upload a photo of yourself</span>
+                    <label for="uploadFile">Click me to choose a file</label>
+                    <div style="display: flex;">
+                        <input class="queue-button queue-signup-button queue-signup-back-button" type="button" value="Back">
+                        <input class="queue-button queue-signup-button" id="finishSignUp" type="button" value="Finish">
+                    </div>
+                </div>
+                <input id="uploadFile" type="file" style="position: absolute; opacity: 0;">
+            </form>
+        </main>
+
+        <footer class="queue-signup-footer">
+            <div>
+                <div>
+                    © queue 2019
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            let count = 1;
+            let signUpProgressBar = document.getElementsByClassName('queue-signup-progress-bar');
+            signUpProgressBar[count-1].getElementsByClassName('queue-signup-progress-bar-full')[0].style.width = "100%";
+            $('.queue-signup-next-button').on('click', function(){
+                if(count == 0){
+                    count = 1;
+                }
+                signUpProgressBar[count].getElementsByClassName('queue-signup-progress-bar-full')[0].style.width = "100%";
+                $('#signUpForm').css("transform", "translateX(" + count * 20 * -1 + "%)");
+                count++;
+            });
+            $('.queue-signup-back-button').on('click', function(){
+                count--;
+                signUpProgressBar[count].getElementsByClassName('queue-signup-progress-bar-full')[0].style.width = "0%";
+                $('#signUpForm').css("transform", "translateX(" + (count - 1) * 20 * -1 + "%)");
+            });
+        });
+        document.getElementById("finishSignUp").onclick = function(){
+            window.location.href = "dashboard.html";
+        }
+    </script>
+</html>
