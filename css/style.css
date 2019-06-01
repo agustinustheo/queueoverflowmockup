@@ -372,8 +372,8 @@ nav.queue-nav.queue-signup-nav{
     align-content: center;
 }
 nav.queue-nav.queue-signup-nav > *{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 @media screen and (min-height: 546px){
     .queue-signup-footer{
@@ -421,6 +421,13 @@ nav.queue-nav.queue-signup-nav > *{
     .queue-image-slider{
         height: 60%;
     }
+    .queue-nav-logo > img{
+        width: 235px;
+    }
+    .queue-nav-logo-home{
+        position: fixed;
+        left: calc(50vw - (235px / 2));
+    }
 }
 @media screen and (min-width: 535px) and (max-width: 768px){
     .queue-image-slider-container{
@@ -429,6 +436,13 @@ nav.queue-nav.queue-signup-nav > *{
     }
     .queue-image-slider{
         height: 60%;
+    }
+    .queue-nav-logo > img{
+        width: 200px;
+    }
+    .queue-nav-logo-home{
+        position: fixed;
+        left: calc(50vw - (200px / 2));
     }
 }
 @media screen and (max-width: 535px){
@@ -439,4 +453,53 @@ nav.queue-nav.queue-signup-nav > *{
     .queue-image-slider{
         height: 80%;
     }
+    .queue-nav-logo > img{
+        width: 135px;
+    }
+    .queue-nav-item-container > a{
+        font-size: 10pt;
+    }
+    .queue-nav-logo-home{
+        left: calc(50vw - (135px / 2));
+    }
+}
+#expandMore{
+    opacity: 0;
+    position: absolute;
+}
+#labelExpandMore{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    overflow: hidden;
+}
+#labelExpandMore > *{
+    display: block;
+}
+#labelExpandMore > b{
+    margin-left: 5px;
+    transform: rotate(180deg);
+    transition: all .3s ease-in-out;
+}
+#expandMore + div > a{
+    text-decoration: none;
+}
+#expandMore:checked + div > a > label > b#expandArrow{
+    transform: rotate(0deg);
+}
+.queue-hidden-nav-items{
+    opacity: 0;
+    height: 0;
+
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+#expandMore:checked + div + div.queue-hidden-nav-items,
+#expandMore:checked + div + div.queue-hidden-nav-items + div.queue-hidden-nav-items{
+    opacity: 1;
+    height: 38px;
+}
+.queue-nav-logo-home{
+    position: fixed;
 }
