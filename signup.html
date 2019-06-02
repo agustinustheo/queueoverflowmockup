@@ -57,27 +57,26 @@
                 <div class="queue-signup-form">
                     <b>What's your name?</b>
                     <span>Please enter your name</span>
-                    <input class="queue-signup-textbox" type="text" placeholder="Enter your name..">
+                    <input id="nameInput" class="queue-signup-textbox" type="text" placeholder="Enter your name..">
+                    <span id="nameErr" class="queue-error-message">Name cannot be empty</span>
                     <input class="queue-button queue-signup-button queue-signup-next-button" type="button" value="Next">
                 </div>
                 <div class="queue-signup-form">
                     <b>What's your email address?</b>
                     <span>We will send a confirmation to your email</span>
-                    <input class="queue-signup-textbox" type="text" placeholder="Enter your email..">
+                    <input id="emailInput" class="queue-signup-textbox" type="text" placeholder="Enter your email..">
+                    <span id="emailErr" class="queue-error-message">Email cannot be empty</span>
                     <div class="queue-signup-form-button">
                         <input class="queue-button queue-signup-button queue-signup-back-button" type="button" value="Back">
                         <input class="queue-button queue-signup-button queue-signup-next-button" type="button" value="Next">
                     </div>
                 </div>
                 <div class="queue-signup-form">
-                    <b>What's your bank account number?</b>
+                    <b>What's your phone number?</b>
                     <div>
-                        <label class="queue-signup-label" for="bankName">Bank</label>
-                        <input class="queue-signup-textbox" type="text" placeholder="Enter your bank name..">
-                    </div>
-                    <div>
-                        <label class="queue-signup-label" for="bankNumber">Bank Number</label>
-                        <input class="queue-signup-textbox" type="text" placeholder="Enter your bank number..">
+                        <label class="queue-signup-label" for="phoneNumber">Phone Number</label>
+                        <input id="phoneInput" class="queue-signup-textbox" type="text" placeholder="Enter your phone number..">
+                        <span id="phoneErr" class="queue-error-message">Phone number cannot be empty</span>
                     </div>
                     <div class="queue-signup-form-button">
                         <input class="queue-button queue-signup-button queue-signup-back-button" type="button" value="Back">
@@ -88,26 +87,29 @@
                     <b>Additional Information</b>
                     <div>
                         <label class="queue-signup-label" for="dateOfBirth">Date of Birth</label>
-                        <input class="queue-signup-textbox" type="text" placeholder="dd/mm/yyyy">
+                        <input id="dobInput" class="queue-signup-textbox" type="text" placeholder="dd/mm/yyyy">
+                        <span id="dobErr" class="queue-error-message">Date of Birth cannot be empty</span>
                     </div>
                     <div>
                         <label class="queue-signup-label" for="homeAddress">Home Address</label>
-                        <input class="queue-signup-textbox" type="text" placeholder="Enter your address..">
+                        <input id="homeInput" class="queue-signup-textbox" type="text" placeholder="Enter your address..">
+                        <span id="homeErr" class="queue-error-message">Home address cannot be empty</span>
                     </div>
                     <div>
                         <label class="queue-signup-label" for="businessAddress">Business Address</label>
                         <input class="queue-signup-textbox" type="text" placeholder="Enter your business address..">
                     </div>
                     <div>
-                        <label>Account Type</label>
-                        <label for="investorsRadio">
-                            <input type="radio" name="accountType">
-                            Investors
+                        <label>Gender</label>
+                        <label for="maleRadio">
+                            <input type="radio" name="gender">
+                            Male
                         </label>
-                        <label for="startersRadio">
-                            <input type="radio" name="accountType">
-                            Starters
+                        <label for="femaleRadio">
+                            <input type="radio" name="gender">
+                            Female
                         </label>
+                        <span id="genderErr" class="queue-error-message">Gender must be selected</span>
                     </div>
                     <div class="queue-signup-form-button">
                         <input class="queue-button queue-signup-button queue-signup-back-button" type="button" value="Back">
@@ -118,7 +120,8 @@
                     <b>Set up your password</b>
                     <div>
                         <label class="queue-signup-label" for="password">Password</label>
-                        <input class="queue-signup-textbox" type="password" placeholder="Enter your password..">
+                        <input id="passInput" class="queue-signup-textbox" type="password" placeholder="Enter your password..">
+                        <span id="passErr" class="queue-error-message">Password cannot be empty</span>
                     </div>
                     <div class="queue-signup-form-button">
                         <input class="queue-button queue-signup-button queue-signup-back-button" type="button" value="Back">

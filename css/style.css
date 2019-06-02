@@ -503,3 +503,8 @@ nav.queue-nav.queue-signup-nav > *{
 .queue-nav-logo-home{
     position: fixed;
 }
+.queue-error-message{
+    display: none;
+    font-size: 10pt;
+    color: red;
+}
