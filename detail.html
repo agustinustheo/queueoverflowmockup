@@ -6,6 +6,7 @@
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="img/favicon2.ico" type="favicon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/detail.css">
     </head>
     <body>
@@ -70,29 +71,51 @@
                             <!-- CODE HERE -->
                             <div class="queue-detail-question-container">
                                 <div class="question-upvotes">
-                                    <a href="#"><img class="up-arrow" src="img/web_assets/up-arrow.png" alt=""></a>
-                                    <p>12</p>
+                                    <a href="#">
+                                        <img class="up-arrow" src="img/web_assets/up-arrow.png" alt="">
+                                    </a>
+                                    <p>
+                                        12
+                                    </p>
+                                    <a href="#">
+                                        <img class="down-arrow" src="img/web_assets/up-arrow.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="queue-detail-question">
                                     <h3>How to find the first non repeated character of a given String?</h3>
-                                    <div>
+                                    <hr>
+                                    <div class="question-descriptions">
                                         The answer here is d. So the point that strikes me is that it can be done in two ways:
 
                                         For every index i loop i-1 times and check if that character occurs ever again. But this is not efficient: growth of this method is O(N^2) where N is the length of the string.
                                         Another possible good way could be if I could form a tree or any other ds such that I could order the character based on the weights (the occurrence count). This could take me just one loop of length N through the string to form the structure. That is just O(N) + O(time to build tree or any ds).
                                     </div>
-                                    <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
-                                    <div>
-                                        Mary Ham
-                                        View count: 624 times
-                                        Answer submitted: 3 answers
+                                    <hr>
+                                    <div class="question-detail-info">
+                                        <div>
+                                            <p>
+                                                Viewed 624 times.
+                                                <br>
+                                                3 answers submitted.
+                                            </p>
+                                        </div>
+                                        <div class="asker-profile">
+                                            <p>
+                                                Mary Ham
+                                            </p>
+                                            <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="queue-answers">
+                            <hr>
+                            <div class="queue-answers-container">
                                 <ul>
                                     <li>
+                                        <div class="answerer-profile">
+                                            <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
+                                            <div class="queue-answers-name">Poppy Harlow</div>
+                                        </div>
                                         <p>
                                         Here's a very straightforward O(n) solution:
 
@@ -111,10 +134,14 @@
                                             return None
                                         We loop through the string once. When we come across a new character, we store it in counts with a value of 1, and append it to order. When we come across a character we've seen before, we increment its value in counts. Finally, we loop through order until we find a character with a value of 1 in counts and return it.
                                         </p>
-                                        <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
-                                        <div class="queue-answers-name">Poppy Harlow</div>
                                     </li>
+                                    <br>
                                     <li>
+                                        <div class="answerer-profile">
+                                            <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
+                                            <div class="queue-answers-name">Gloria Borger</div>
+                                        </div>
+                                        <hr>
                                         <p>
                                         I think that removing of the repeating characters from the string may significantly reduce the number of operations. For example:
 
@@ -130,10 +157,13 @@
                                         else:
                                             print "No answer"
                                         </p> 
-                                        <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
-                                        <div class="queue-answers-name">Gloria Borger</div>
-                                    </li> 
+                                    </li>
+                                    <br>
                                     <li>
+                                        <div class="answerer-profile">
+                                            <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
+                                            <div class="queue-answers-name">Poppy Gloria</div>
+                                        </div>
                                         <p>
                                         A list comprehension will give you the characters in the order they appear if they only appear once:
 
@@ -150,8 +180,6 @@
                                         In [69]: (a for a in s if s.count(a) == 1).next()
                                         Out[69]: 'd'
                                         </p>
-                                        <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
-                                        <div class="queue-answers-name">Poppy Gloria</div>
                                     </li>                      
                                 </ul>
 
