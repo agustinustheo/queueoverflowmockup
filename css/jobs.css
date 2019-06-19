@@ -1,0 +1,27 @@
+/* NOTE TO MAX DESIGN THIS YOURSELF */
+
+.queue-jobs-partners{
+    width: 80%;
+    margin: auto;
+    margin-top: 74px;
+    display: flex;
+    border-radius: 30px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+}
+.queue-jobs-partners > div:nth-child(1){
+    text-align: center;
+    font-size: 14pt;
+    color: rgb(91, 171, 250);
+}
+.queue-jobs-partners > div:nth-child(1) > div{
+    margin: 10px;
+    cursor: pointer
+}
+.queue-jobs-partners > div:nth-child(2){
+    margin: 15px;
+}
+.queue-jobs-detail{
+    display: none;
+}
