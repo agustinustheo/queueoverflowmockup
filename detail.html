@@ -6,7 +6,7 @@
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="img/favicon2.ico" type="favicon">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/detail.css">
     </head>
     <body>
         <input type="checkbox" id="queueNavTrigger">
@@ -64,22 +64,98 @@
         </div>
         <div class="queue-body">
             <div class="queue-main">
-        
                 <main id="mainExplanation" class="queue-landing-page-desc">
                     <div>
                         <div>
                             <!-- CODE HERE -->
+                            <div class="queue-detail-question-container">
+                                <div class="question-upvotes">
+                                    <a href="#"><img class="up-arrow" src="img/web_assets/up-arrow.png" alt=""></a>
+                                    <p>12</p>
+                                </div>
+                                <div class="queue-detail-question">
+                                    <h3>How to find the first non repeated character of a given String?</h3>
+                                    <div>
+                                        The answer here is d. So the point that strikes me is that it can be done in two ways:
 
-
-
-
-
-
-
-
-
-
+                                        For every index i loop i-1 times and check if that character occurs ever again. But this is not efficient: growth of this method is O(N^2) where N is the length of the string.
+                                        Another possible good way could be if I could form a tree or any other ds such that I could order the character based on the weights (the occurrence count). This could take me just one loop of length N through the string to form the structure. That is just O(N) + O(time to build tree or any ds).
+                                    </div>
+                                    <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
+                                    <div>
+                                        Mary Ham
+                                        View count: 624 times
+                                        Answer submitted: 3 answers
+                                    </div>
+                                </div>
+                            </div>
                             
+                            <div class="queue-answers">
+                                <ul>
+                                    <li>
+                                        <p>
+                                        Here's a very straightforward O(n) solution:
+
+                                        def fn(s):
+                                            order = []
+                                            counts = {}
+                                            for x in s:
+                                            if x in counts:
+                                                counts[x] += 1
+                                            else:
+                                                counts[x] = 1 
+                                                order.append(x)
+                                            for x in order:
+                                            if counts[x] == 1:
+                                                return x
+                                            return None
+                                        We loop through the string once. When we come across a new character, we store it in counts with a value of 1, and append it to order. When we come across a character we've seen before, we increment its value in counts. Finally, we loop through order until we find a character with a value of 1 in counts and return it.
+                                        </p>
+                                        <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
+                                        <div class="queue-answers-name">Poppy Harlow</div>
+                                    </li>
+                                    <li>
+                                        <p>
+                                        I think that removing of the repeating characters from the string may significantly reduce the number of operations. For example:
+
+                                        s = "aabccbdcbe"
+                                        while s != "":
+                                            slen0 = len(s)
+                                            ch = s[0]
+                                            s = s.replace(ch, "")
+                                            slen1 = len(s)
+                                            if slen1 == slen0-1:
+                                                print ch
+                                                break;
+                                        else:
+                                            print "No answer"
+                                        </p> 
+                                        <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
+                                        <div class="queue-answers-name">Gloria Borger</div>
+                                    </li> 
+                                    <li>
+                                        <p>
+                                        A list comprehension will give you the characters in the order they appear if they only appear once:
+
+                                        In [61]: s = 'aabccbdcbe'
+                                        
+                                        In [62]: [a for a in s if s.count(a) == 1]
+                                        Out[62]: ['d', 'e']
+                                        Then just return the first entry of this:
+                                        
+                                        In [63]: [a for a in s if s.count(a) == 1][0]
+                                        Out[63]: 'd'
+                                        If you just need the first entry, a generator would work as well:
+                                        
+                                        In [69]: (a for a in s if s.count(a) == 1).next()
+                                        Out[69]: 'd'
+                                        </p>
+                                        <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
+                                        <div class="queue-answers-name">Poppy Gloria</div>
+                                    </li>                      
+                                </ul>
+
+                            </div>
 
                             <!-- END CODE HERE -->
                         </div>
