@@ -122,6 +122,6 @@ document.getElementById("finishSignUp").onclick = function(){
     }
     else{
         $('#passErr').hide();
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
 }

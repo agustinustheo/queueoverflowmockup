@@ -69,29 +69,28 @@
                 <main id="mainExplanation" class="queue-landing-page-desc">
                     <div>
                         <div>
-                            <!-- CODE HERE -->
                             <div class="queue-detail-question-container">
                                 <div class="question-upvotes">
-                                    <a href="#">
+                                    <a href="#" id="addNum">
                                         <img class="up-arrow" src="img/web_assets/up-arrow.png" alt="">
                                     </a>
-                                    <p>
+                                    <p id="numberManipulate">
                                         12
                                     </p>
-                                    <a href="#">
+                                    <a href="#" id="decNum">
                                         <img class="down-arrow" src="img/web_assets/up-arrow.png" alt="">
                                     </a>
                                 </div>
                                 <div class="queue-detail-question">
                                     <h3>How to find the first non repeated character of a given String?</h3>
-                                    <hr>
+                                    
                                     <div class="question-descriptions">
                                         The answer here is d. So the point that strikes me is that it can be done in two ways:
 
                                         For every index i loop i-1 times and check if that character occurs ever again. But this is not efficient: growth of this method is O(N^2) where N is the length of the string.
                                         Another possible good way could be if I could form a tree or any other ds such that I could order the character based on the weights (the occurrence count). This could take me just one loop of length N through the string to form the structure. That is just O(N) + O(time to build tree or any ds).
                                     </div>
-                                    <hr>
+                                    
                                     <div class="question-detail-info">
                                         <div>
                                             <p>
@@ -109,7 +108,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr>
+                            
                             <div class="queue-answers-container">
                                 <ul>
                                     <li>
@@ -117,7 +116,7 @@
                                             <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
                                             <div class="queue-answers-name">Poppy Harlow</div>
                                         </div>
-                                        <hr>
+                                        
                                         <p>
                                         Here's a very straightforward O(n) solution:
 
@@ -138,14 +137,14 @@
                                         </p>
                                     </li>
                                     <div class="answer-separator">
-                                        <hr>
+                                        
                                     </div>
                                     <li>
                                         <div class="answerer-profile">
                                             <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
                                             <div class="queue-answers-name">Gloria Borger</div>
                                         </div>
-                                        <hr>
+                                        
                                         <p>
                                         I think that removing of the repeating characters from the string may significantly reduce the number of operations. For example:
 
@@ -163,14 +162,14 @@
                                         </p> 
                                     </li>
                                     <div class="answer-separator">
-                                        <hr>
+                                        
                                     </div>
                                     <li>
                                         <div class="answerer-profile">
                                             <img class="profile-pic" src="img/web_assets/anonymous/profile_male.jpg" alt="">
                                             <div class="queue-answers-name">Poppy Gloria</div>
                                         </div>
-                                        <hr>
+                                        
                                         <p>
                                         A list comprehension will give you the characters in the order they appear if they only appear once:
 
@@ -190,7 +189,11 @@
                                     </li>                      
                                 </ul>
                             </div>
-                            <!-- END CODE HERE -->
+
+                            <div class="queue-reply-box">
+                                <textarea></textarea>
+                                <a href="detail.html">Reply</a>
+                            </div>
                         </div>
                     </div>
                 </main>
