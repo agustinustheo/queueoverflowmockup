@@ -1,5 +1,3 @@
-/* NOTE TO MAX DESIGN THIS YOURSELF */
-
 .queue-jobs-partners{
     width: 80%;
     margin: auto;
@@ -14,6 +12,7 @@
     text-align: center;
     font-size: 14pt;
     color: rgb(91, 171, 250);
+    width: 250px;
 }
 .queue-jobs-partners > div:nth-child(1) > div{
     margin: 10px;
@@ -21,7 +20,12 @@
 }
 .queue-jobs-partners > div:nth-child(2){
     margin: 15px;
+    width: calc(100% - 200px)
 }
 .queue-jobs-detail{
     display: none;
+}
+
+.queue-jobs-detail>ul.a{
+    list-style-type: square;
 }
